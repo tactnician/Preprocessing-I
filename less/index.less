@@ -52,7 +52,6 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
 }
@@ -60,30 +59,22 @@ html, body {
 // --------------------------
 
 html,
-body
-{
+body {
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../img/openRoad.jpg");
+    background-image: url(../img/Sunglasses.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body
-{
+body{
     overflow-x: hidden;
     /*background: url('../img/bg.jpg') repeat top left;*/
 }
 
-h1
-{
-    font-size: 20px;
-    font-weight: normal;
-    color: #2e6e80;
-}
 
 /**
   * important: keep position fixed, you can however use top:0 instead of bottom:0
@@ -93,7 +84,7 @@ h1
 {
     position: fixed;
     top: 20%;
-    bottom: 50px;
+    bottom: 20%;
     left: 0;
 }
 
@@ -105,19 +96,19 @@ h1
 .horizon
 {
     z-index: 1;
-    width: 3000px;
+    // width: 3000px;
 }
 
 .middle
 {
     z-index: 500;
-    width: 4000px;
+    // width: 4000px;
 }
 
 .front
 {
     z-index: 1000;
-    width: 6000px;
+    // width: 6000px;
 }
 
 
@@ -136,11 +127,10 @@ h1
     position: absolute;
 }
 
-.intro
-{
-    bottom: 0px;
+.intro{
     position: absolute;
-    left: 20px;
+	left: 5rem;
+	bottom: 0px;
 }
 
 
@@ -240,4 +230,37 @@ button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
     margin-left: .5em;
+}
+
+// Less-ish -------------------------------------------------
+
+.flex-custom(@justify, @align, @direction){
+	display:flex;
+	justify-content:@justify;
+	align-items: @align;
+	flex-direction: @direction;
+}
+
+.help(){
+	border: 1px solid white;
+}
+
+
+
+header{
+	.help
+	.flex-custom(flex-start, center, column);
+	
+	// width: 2rem;
+}
+
+nav{
+	.help;
+	.flex-custom(flex-start, center, column);
+	// width: 2rem;
+	align-content: space-between;
+}
+
+.horizon{
+	position: fixed;
 }
