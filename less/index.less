@@ -66,14 +66,14 @@ body {
     background-image: url(../img/Sunglasses.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body{
-    overflow-x: hidden;
-    /*background: url('../img/bg.jpg') repeat top left;*/
-}
+// body{
+//     overflow-x: hidden;
+   
+// }
 
 
 /**
@@ -114,153 +114,209 @@ body{
 
 /* Indivdual cards on front page */
 
-.page
-{
-    top: 0px;
-    width: 500px;
-    height: 600px;
-    align-self: center;
-    background: white;
-    padding: 10px 30px;
-    border: 1px #eee solid;
-    border-radius: 15px;
-    position: absolute;
-}
+// .page
+// {
+//     top: 0px;
+//     width: 500px;
+//     height: 600px;
+//     align-self: center;
+//     background: white;
+//     padding: 10px 30px;
+//     border: 1px #eee solid;
+//     border-radius: 15px;
+//     position: absolute;
+// }
 
-.intro{
-    position: absolute;
-	left: 5rem;
-	bottom: 5rem;
-}
+// .intro{
+//     position: absolute;
+// 	left: 5rem;
+// 	bottom: 5rem;
+// 	// border-radius: 100%;
+// }
 
 
-.first
-{
+// .first
+// {
     // left: 450px;
-    /*overflow-y: hidden;*/
-}
+//    *overflow-y: hidden;
+// }
 
-.second
-{
-    width: 700px;
-    left: 1105px;
-    /*overflow-y: scroll;*/
-}
+// .second
+// {
+//     width: 700px;
+//     left: 1105px;
+//     /*overflow-y: scroll;*/
+// }
 
-.third
-{
-    left: 2000px;
-    text-align: center;
-}
+// .third
+// {
+//     left: 2000px;
+//     text-align: center;
+// }
 
-.fourth
-{
-    width: 500px;
-    left: 2100px;
-}
+// .fourth
+// {
+//     width: 500px;
+//     left: 2100px;
+// }
 
 /**/
 
-#welcome
-{
-    text-align: center;
-}
+// #welcome
+// {
+//     text-align: center;
+// }
 
-#carShipping
-{
-    position: static;
-    right: 0px;
+// #carShipping
+// {
+//     position: static;
+//     right: 0px;
 
-}
+// }
 
 /*Form*/
-form {
-    /* Just to center the form on the page */
-    margin: 0 auto;
-    width: 400px;
-    /* To see the outline of the form */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-}
+// form {
+//     /* Just to center the form on the page */
+//     margin: 0 auto;
+// width: 400px;
+//     /* To see the outline of the form */
+//     padding: 1em;
+//     border: 1px solid #CCC;
+//     border-radius: 1em;
+// }
 
-form div + div {
-    margin-top: 1em;
-}
+// form div + div {
+//     margin-top: 1em;
+// }
 
-label {
+// label {
     /* To make sure that all labels have the same size and are properly aligned */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}
+    // display: inline-block;
+    // width: 90px;
+    // text-align: right;
+// }
 
-input, textarea {
+// input, textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: 1em sans-serif;
+    // font: 1em sans-serif;
 
     /* To give the same size to all text fields */
-    width: 300px;
-    box-sizing: border-box;
+    // width: 300px;
+    // box-sizing: border-box;
 
     /* To harmonize the look & feel of text field border */
-    border: 1px solid #999;
-}
+    // border: 1px solid #999;
+// }
 
-input:focus, textarea:focus {
+// input:focus, textarea:focus {
     /* To give a little highlight on active elements */
-    border-color: #000;
-}
+    // border-color: #000;
+// }
 
-textarea {
+// textarea {
     /* To properly align multiline text fields with their labels */
-    vertical-align: top;
+    // vertical-align: top;
 
     /* To give enough room to type some text */
-    height: 5em;
-}
+    // height: 5em;
+// }
 
-.button {
+// .button {
     /* To position the buttons to the same position of the text fields */
-    padding-left: 90px; /* same size as the label elements */
-}
+    // padding-left: 90px; /* same size as the label elements */
+// }
 
-button {
+// button {
     /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
-    margin-left: .5em;
-}
+    // margin-left: .5em;
+// }
 
 // Less-ish -------------------------------------------------
 
-.flex-custom(@justify, @align, @direction){
+// .flex-custom(@justify, @align, @direction){
+// 	display:flex;
+// 	justify-content:@justify;
+// 	align-items: @align;
+// 	flex-direction: @direction;
+// }
+
+// .help(){
+// 	border: 1px solid white;
+// }
+
+.flex-custom(@justify, @align){
 	display:flex;
-	justify-content:@justify;
+	justify-content: @justify;
 	align-items: @align;
-	flex-direction: @direction;
 }
 
 .help(){
 	border: 1px solid white;
 }
 
+.container{
+	display:flex;
+	width: 100%;
 
 
-header{
-	.help
-	.flex-custom(flex-start, center, column);
+	header{
+		width:100%;
+		// .help;
+		flex-direction: column;
+		.flex-custom(center, center);
+		nav{
+			margin: 1rem;
+			padding: 1rem;
+			width: 75%;
+			.flex-custom(space-between, center);
+			// .help;
+			a{
+				.flex-custom(center, center);
+				width: 10rem;
+				text-decoration: none;
+				color: black;
+				border: 3px solid black;
+				background-color:whitesmoke;
+				border-radius: 50%;
+				font-size: 1.5rem;
+				padding: 1rem;
+				margin: 1rem;
+			}
+			a:hover {
+				color:white;
+				border-color: white;
+				background-color: black;
+			}
+		}
+	}
+
+	page{
+		.flex-custom(center, center);
+		background-color: white;
+		width:500px;
+		margin: 1rem 1rem;
+		border-radius: 15px;
 	
-	// width: 2rem;
+		// img{
+		// 	margin: 3rem;
+		// 	width: 30%;
+			
+		}
+	}
+	
 }
 
-nav{
-	.help;
-	.flex-custom(flex-start, center, column);
-	// width: 2rem;
-	align-content: space-between;
-}
+// .page{
+//     top: 0px;
+//     width: 500px;
+//     height: 600px;
+//     align-self: center;
+//     background: white;
+//     padding: 10px 30px;
+//     border: 1px #eee solid;
+//     border-radius: 15px;
+//     position: absolute;
+// }
 
-.horizon{
-	position: fixed;
-}
