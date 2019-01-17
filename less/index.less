@@ -251,6 +251,11 @@ body {
 	border: 1px solid white;
 }
 
+h3{
+	font-size: 2rem;
+}
+
+// -------------------------------------------------------------
 .container{
 	display:flex;
 	width: 100%;
@@ -258,14 +263,18 @@ body {
 
 	header{
 		width:100%;
-		// .help;
 		flex-direction: column;
 		.flex-custom(space-evenly, center);
+		margin: 1rem auto;
+		h1{
+			color:white;
+			font-size: 2.5rem;
+		}
 		nav{
-			margin: 1rem;
+			// margin: 0.5rem;
 			padding: 1rem;
 			width: 100%;
-			.flex-custom(space-between, center);
+			.flex-custom(space-around, center);
 			// .help;
 			a{
 				.flex-custom(center, center);
@@ -273,7 +282,7 @@ body {
 				text-decoration: none;
 				color: black;
 				border: 3px solid black;
-				background-color:whitesmoke;
+				background-color:rgba(255, 255, 255, 1);
 				border-radius: 50%;
 				font-size: 1.5rem;
 				padding: 1rem;
@@ -298,21 +307,42 @@ body {
 			color: white;
 			line-height: 1.5;
 			background: rgba(0, 0, 0, 0.5);
-			padding: 10px 30px;
+			padding: 2rem 2rem;
 			border: 2px #eee solid;
 			border-radius: 15px;
 			margin:3rem;
 			.flex-custom(center, center);
 			flex-direction: column;
+			text-align: center;
+		}
+		.intro{
+			width: 2000px;
+			font-size: 2rem;
+			.flex-custom(stretch, center);
+			border: none;
+			text-align: center;
 			img{
-				width: 50%;
-			}
+				height: 10rem;
+				width: 10rem;
+				border: 2px solid white;
+				border-radius: 100%;
+				margin: 1rem;
+			}		
 		}
 		.about{
-			img{
-				
-			}
-			
+			height: 120%;
+		}
+		.skills{
+			height: 120%;
+		}
+		.works{
+			height: 120%;
+		}
+		.resume{
+			height: 120%;
+		}
+		.contat{
+			height: 120%;
 		}
 	}
 
