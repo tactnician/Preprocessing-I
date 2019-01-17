@@ -180,11 +180,12 @@ body {
 /* This extra margin represent roughly the same space as the space
        between the labels and their text fields */
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .container {
   display: flex;
-  width: 100%;
+  max-width: 1024px;
+  font-family: "Georgia", "Comic Sans", "Comic Classic";
 }
 .container header {
   width: 100%;
@@ -197,9 +198,10 @@ h3 {
 .container header h1 {
   color: white;
   font-size: 2.5rem;
+  margin: 0;
 }
 .container header nav {
-  padding: 1rem;
+  padding: 0.2rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -213,11 +215,11 @@ h3 {
   text-decoration: none;
   color: black;
   border: 3px solid black;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   font-size: 1.5rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .container header nav a:hover {
   color: white;
@@ -228,8 +230,9 @@ h3 {
   z-index: 1000;
   width: 5000px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  align-content: center;
 }
 .container .front .page {
   height: 90%;
@@ -241,19 +244,20 @@ h3 {
   border-radius: 15px;
   margin: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
 .container .front .intro {
   width: 2000px;
+  height: 100%;
   font-size: 2rem;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
-  border: none;
   text-align: center;
+  margin-left: 6rem;
 }
 .container .front .intro img {
   height: 10rem;
@@ -263,17 +267,17 @@ h3 {
   margin: 1rem;
 }
 .container .front .about {
-  height: 120%;
+  height: 100%;
 }
 .container .front .skills {
-  height: 120%;
+  height: 100%;
 }
 .container .front .works {
-  height: 120%;
+  height: 100%;
 }
 .container .front .resume {
-  height: 120%;
+  height: 100%;
 }
 .container .front .contat {
-  height: 120%;
+  height: 100%;
 }
