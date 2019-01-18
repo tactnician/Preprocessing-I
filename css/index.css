@@ -139,7 +139,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url(../img/Sunglasses.jpg);
+  background-image: url(../img/pakata-goh-1065625-unsplash.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -257,7 +257,6 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 6rem;
 }
 .container .front .intro img {
   height: 10rem;
@@ -269,13 +268,28 @@ h3 {
 .container .front .about {
   height: 100%;
 }
+.container .front .about p {
+  text-align: left;
+}
 .container .front .skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 100%;
 }
+.container .front .skills img {
+  width: 35rem;
+}
 .container .front .works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .container .front .resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .container .front .contat {
