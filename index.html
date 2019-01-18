@@ -4,16 +4,130 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Tactnician</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <link rel="stylesheet" href="css/navbar.css" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link href="https://fonts.googleapis.com/css?family=Comic+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Classic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Top+Comic" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+<div class="container">
+  <header>
+    <h1>Tactnician</h1>
+    <nav>
+      <a href="#">0hm</a>
+      <a href=".about">@b0ut</a>
+      <a href=".skillz">sk1llz</a>
+      <a href=".werkz">w3rkz</a>
+      <a href=".resume">r3sum3</a>
+      <a href=".contact">c0nt@ct</a>
+    </nav>
+  </header>
+
+<!-- <section class="horizon scroll"><section/> -->
+<!-- <section class="middle scroll"></section> -->
+<section class="front scroll">
+  <div class="intro page ">
+        <img src="./img/afro-samurai-gravatar.jpg">
+        <!-- <h3>Tactnician</h3> -->
+        <p>Full Stack Web Development <br> Network Infrastructure <br> LV Electrical Systems</p>
+  </div>
+  <div class="about page">
+    <div >
+      <h3>@b0ut</h3>
+        <p>My skill set can be divided into what I've been doing, what I'm doing now and what I will be doing.</p>
+        <br>
+        <p>As a student at Lambda School my objective is to fine tune the skills I already have from many years as a programming enthusiast. The cirriculum deals with Full Stack Web Development in Javascript frameworks along with Html and CSS.</p>
+        <br>
+        <p>In my current position I help to deploy, troubleshoot and administer a wireless mesh network spread out accross roughly five square blocks. I am primarily resposible for determining the cause of outages and mapping pre-existing hardware.</p>
+        <br>
+        <p>As a Low Voltage Electrical Technician I was responsible for the installation and maintenance of physical access controls and surveillence systems. Structured cabling and the installation of IT infrastructure were all in a days work. </p>
+    </div>
+  </div>
+  <div class="skills page">
+    
+    <h3>sk1llz</h3>
+    <img src="./img/chart.jpeg" /> 
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero, inventore nihil repellendus consequuntur dolor necessitatibus nesciunt aut tempora reiciendis aliquid ad maxime iste qui sed soluta voluptatem, velit harum!</p> -->
+    <!-- <div  class="text">
+      <h3></h3>
+        <p>
+        
+        </p>
+    </div> -->
+  </div>
+  <div class=" works page ">
+    <h3>w3rkz</h3>
+    <img src="./img/blob-under-construction.gif" alt="under construction">
+    <p>Under Construction</p>
+    <!-- <p>This Section will highlight completed projects</p> -->
+    <p>Find me on <a href="https://github.com/tactnician">GitHub</a></p>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dolorum ratione omnis odio at? Minima harum animi unde error facilis eos, accusamus deserunt atque illum ea repudiandae debitis, nihil assumenda?</p>
+  </div>
+  <div class=" resume page ">
+      <h3>r3sum3</h3>
+      <img src="./img/blob-under-construction.gif" alt="under construction">
+      <p>Under Construction</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, odio? Ullam nesciunt esse, fugit quia minima libero, molestiae rerum tempore placeat dicta amet praesentium officiis dolore consectetur odio quae porro?</p>
+  </div>
+  <div class=" contact page">
+    <h3>Contact</h3>
+    <form action="/my-handling-form-page" method="post">
+      <div>
+        <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+      </div>
+
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email">
+      </div>
+
+      <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>
+     
+      <div class="button">
+        <button type="submit">Send your message</button>
+      </div>
+    </form> 
+  </div> 
+  
+</section>
+
+<!-- <footer>
+    <h3>Contact</h3>
+    <p>tactnician@gmail.com</p>
+</footer> -->
+</div>
+
+<!--<div class="scroll"><h1>z</h1></div>-->
+<!--<div class="scroll"><h1></h1></div>-->
+<!--<div class="scroll"><h1></h1></div>-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+<script type="text/javascript">
+(function($) {
+  $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+      {
+      height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+      onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+          // console.log(percent);
+      }
+  });
+}(jQuery));
+</script>
+<script type="text/javascript" src="js/navbar.js"></script>
 </body>
 </html>

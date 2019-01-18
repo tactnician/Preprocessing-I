@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../img/pakata-goh-1065625-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll {
+  position: fixed;
+  top: 20%;
+  bottom: 20%;
+  left: 0;
+}
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+.horizon {
+  z-index: 1;
+}
+.middle {
+  z-index: 500;
+}
+/* Indivdual cards on front page */
+/**/
+/*Form*/
+/* To make sure that all labels have the same size and are properly aligned */
+/* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+/* To give the same size to all text fields */
+/* To harmonize the look & feel of text field border */
+/* To give a little highlight on active elements */
+/* To properly align multiline text fields with their labels */
+/* To give enough room to type some text */
+/* To position the buttons to the same position of the text fields */
+/* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+h3 {
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+  max-width: 1024px;
+  font-family: "Georgia", "Comic Sans", "Comic Classic";
+}
+.container header {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem auto;
+}
+.container header h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.container header nav {
+  padding: 0.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container header nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  text-decoration: none;
+  color: black;
+  border: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.container header nav a:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container .front {
+  z-index: 1000;
+  width: 5000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container .front .page {
+  height: 90%;
+  color: white;
+  line-height: 1.5;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 2rem;
+  border: 2px #eee solid;
+  border-radius: 15px;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container .front .intro {
+  width: 2000px;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .front .intro img {
+  height: 10rem;
+  width: 10rem;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 1rem;
+}
+.container .front .about {
+  height: 100%;
+}
+.container .front .about p {
+  text-align: left;
+}
+.container .front .skills {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.container .front .skills img {
+  width: 35rem;
+}
+.container .front .works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .front .resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .front .contat {
+  height: 100%;
+}
